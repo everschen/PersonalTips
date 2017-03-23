@@ -30,9 +30,11 @@ def copyFiles(src, dst):
             #filesCopiedNum += copyFiles(src_path, dst_path)
         # 若源路径为文件，不重复则复制，否则无操作。
         if os.path.isfile(src_path):
-            if file_extension(src_path):			
-                shutil.copyfile(src_path, dst_path)
-                filesCopiedNum += 1
+            if file_extension(src_path):
+               print "copy "+src_path + " ..."		
+               shutil.copyfile(src_path, dst_path)
+               shutil.copystat(src_path, dst_path)
+               filesCopiedNum += 1
 
     return filesCopiedNum
 
