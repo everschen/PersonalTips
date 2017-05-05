@@ -343,9 +343,24 @@ def handle_main_section(cf):
 			cur_pats=cur_filter.split('|')	
 			cur_pats = [ x for x in cur_pats if x != '' ]
 			for cur_pat in cur_pats:
-				if cur_pat not in pats:
-					pats.append(cur_pat)
+				found =  False
+				for main_pat in pats:
+					if cur_pat in main_pat:
+						found = True
+						break
 
+				if found == False:
+					for main_pat in pats:
+						if main_pat in cur_pat:
+							#print cur_pat, "<-" , main_pat,
+							found = True
+							break
+					#if found == False and section == 'Error':
+					if found == False:
+						pats.append(cur_pat)
+						need_add = need_add + cur_pat + '|'
+						#print cur_pat
+			#print ""
 		
 
 

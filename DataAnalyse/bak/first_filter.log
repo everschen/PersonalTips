@@ -1,0 +1,10 @@
+01-02 03:08:04.839  1146  1146 D LEMON   : 03:08:04.839 ZOS: INFO: Client Send: {"ZIpsecCmd":"ZIpsecIpCmd","Cmd":"ip xfrm policy flush"}
+01-02 03:08:04.839  1146  1146 D LEMON   : 03:08:04.839 ZOS: INFO: Client Recv: {"ZIpsecCb":"ZIpsecCbSucceed"}
+01-02 03:08:04.841  1146  1146 D LEMON   : 03:08:04.841 ZOS: INFO: Client Send: {"ZIpsecCmd":"ZIpsecIpCmd","Cmd":"ip xfrm state add src 192.168.0.227 dst 192.168.0.168 proto esp spi 0x000100 mode tunnel auth sha1 0xc0b29db50bf0f61cbb409d82dae5a97cf6aee9e5 enc aes 0xe78e5d82cda41b1564ee7f5e2edb6f61 reqid 10 encap espinudp 46524 4500 0.0.0.0 replay-window 4"}
+01-02 03:08:04.849  1146  1146 D LEMON   : 03:08:04.849 ZOS: INFO: Client Recv: {"ZIpsecCb":"ZIpsecCbSucceed"}
+01-02 03:08:04.850  1146  1146 D LEMON   : 03:08:04.850 ZOS: INFO: Client Send: {"ZIpsecCmd":"ZIpsecIpCmd","Cmd":"ip xfrm state add src 192.168.0.168 dst 192.168.0.227 proto esp spi 0xbe55e0df mode tunnel auth sha1 0x3e179f6d97d2f5a50a293a46ac5bc45561659ae8 enc aes 0x12488f7b8e014d41f2292c3bdd3c13d5 reqid 11 encap espinudp 4500 46524 0.0.0.0 replay-window 4 sel src ::\/0 dst ::\/0"}
+01-02 03:08:04.852  1146  1146 D LEMON   : 03:08:04.852 ZOS: INFO: Client Recv: {"ZIpsecCb":"ZIpsecCbSucceed"}
+01-02 03:08:04.853  1146  1146 D LEMON   : 03:08:04.853 ZOS: INFO: Client Send: {"ZIpsecCmd":"ZIpsecIpCmd","Cmd":"ip -6 xfrm policy add src fd00:0:5:2::1\/128 dst ::0\/0 dir out ptype main tmpl src 192.168.0.227 dst 192.168.0.168 proto esp mode tunnel reqid 10"}
+01-02 03:08:04.855  1146  1146 D LEMON   : 03:08:04.855 ZOS: INFO: Client Recv: {"ZIpsecCb":"ZIpsecCbSucceed"}
+01-02 03:08:04.855  1146  1146 D LEMON   : 03:08:04.855 ZOS: INFO: Client Send: {"ZIpsecCmd":"ZIpsecIpCmd","Cmd":"ip -6 xfrm policy add src ::0\/0 dst fd00:0:5:2::1\/128 dir in ptype main tmpl src 192.168.0.168 dst 192.168.0.227 proto esp mode tunnel reqid 11"}
+01-02 03:08:04.856  1146  1146 D LEMON   : 03:08:04.856 ZOS: INFO: Client Recv: {"ZIpsecCb":"ZIpsecCbSucceed"}

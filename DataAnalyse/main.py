@@ -19,10 +19,20 @@ cf.read(sys.path[0]+"\config.conf")
 secs = cf.sections()
 print 'Sections:', secs
 print ""
+
 for section in secs :
+	utilities.remove_output(cf, section)
+
+#need to include all the filter from other sections
+utilities.handle_main_section(cf)
+
+for section in secs :
+	if section == 'main':
+		continue
 	print 'Process section',section, '...'
 	utilities.handle_section(cf, section)
 	print ""
+	
 
 
 
