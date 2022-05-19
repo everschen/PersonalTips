@@ -2,4 +2,4 @@ alias branch='git branch -vv'
 alias gitclean='git clean -f -x -d'
 alias submit='_submit(){ git add -u; git commit;  git push --force; }; _submit'
 alias submit-a='_submit(){ git add -u; git commit --amend;  git push --force; }; _submit'
-
+alias rmfc='_rmfc(){ for i in "$1";do echo "rm $i\n"; yes | rm $i ;done ;}; _rmfc'
