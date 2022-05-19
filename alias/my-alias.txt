@@ -4,3 +4,4 @@ alias submit='_submit(){ git add -u; git commit;  git push --force; }; _submit'
 alias submit-a='_submit(){ git add -u; git commit --amend;  git push --force; }; _submit'
 alias rmfc='_rmfc(){ for i in "$1";do echo "rm $i\n"; yes | rm $i ;done ;}; _rmfc'
 alias uplift='_uplift(){ futurize --both-stages --write "$1"; black "$1";  reorder-python-imports "$1";  flake8 --config="ports/isilon/powerlint/files/config/flake8" "$1";}; _uplift'
+alias status="git status"
