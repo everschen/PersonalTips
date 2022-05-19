@@ -1,0 +1,5 @@
+alias branch='git branch -vv'
+alias gitclean='git clean -f -x -d'
+alias submit='_submit(){ git add -u; git commit;  git push --force; }; _submit'
+alias submit-a='_submit(){ git add -u; git commit --amend;  git push --force; }; _submit'
+
