@@ -1,0 +1,18 @@
+1. keep alive for ssh
+	echen1@remotedev-echen1 ~/.ssh
+	% cat config
+	Host *
+			ServerAliveInterval 30
+			ServerAliveCountMax 5
+
+2. vi 字符替换
+vi string replace: %s/yyyy-MM-dd HH:mm:ss//g
+
+3. 填充文件大小
+dd if=/dev/zero of=filename bs=$((1024*1024)) count=$((10*1024))  //10G
+
+4. 超时执行命令
+output=`timeout $CONNECT_TIMEOUT /usr/bin/telnet $address $port 2>&1`
+
+5.删除文件行末尾的^M
+sed -e "s/\r//g" file > newfile
