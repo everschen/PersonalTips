@@ -15,8 +15,7 @@ subject = sys.argv[1]
 sender = "evers_chen@163.com"#???
 content = sys.argv[2]
 recver = "evers_chen@163.com"#???
-#password = "cxg12345"
-password = "XQKTNSQQBFGOUZFE"
+password = "XXXXXX"
 message = MIMEText(content,"plain","utf-8")
 #content ????     "plain"????   utf-8 ????
  

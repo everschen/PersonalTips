@@ -15,8 +15,7 @@ def send_email(title, content):
 	sender = "evers_chen@163.com"#???
 	content = content
 	recver = "evers_chen@163.com"#???
-	#password = "cxg12345"
-	password = "XQKTNSQQBFGOUZFE"
+	password = "XXXXX"
 	message = MIMEText(content,"plain","utf-8")
 	 
 	message['Subject'] = subject #????

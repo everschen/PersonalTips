@@ -1,4 +1,4 @@
 #!/bin/sh
 
-mysql -u root -pabcd.12345 ecoin_system
+mysql -u root -pXXXXX ecoin_system
 
