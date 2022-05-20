@@ -1,0 +1,16 @@
+2021-05-18 13:01:49 buy at price depend on EQ: 3495.040000
+2021-05-18 13:10:15 sell at price depend on EQ: 3519.790000, diff is:24.750000
+2021-05-18 13:14:22 buy at price depend on EQ: 3524.970000
+2021-05-18 13:37:53 buy at price depend on Q: 3522.380000
+2021-05-18 13:42:17 sell at price depend on EQ: 3542.710000, diff is:17.740000
+2021-05-18 13:47:17 buy at price depend on EQ: 3536.110000
+2021-05-18 13:55:14 buy at price depend on EQ: 3521.030000
+2021-05-18 14:09:17 sell at price depend on EQ: 3541.010000, diff is:19.980000
+2021-05-18 14:09:21 sell at price depend on EQ: 3540.970000, diff is:18.590000
+2021-05-18 14:15:36 sell at price depend on Q: 3550.170000, diff is:27.790000
+2021-05-18 14:17:15 buy at price depend on EQ: 3548.950000
+2021-05-18 14:32:19 buy at price depend on EQ: 3528.670000
+2021-05-18 14:39:22 buy at price depend on EQ: 3505.300000
+2021-05-18 14:40:12 buy at price depend on Q: 3504.990000
+2021-05-18 14:54:12 buy at price depend on Q: 3474.990000
+2021-05-18 14:54:12 buy at price depend on EQ: 3474.990000
