@@ -1,7 +1,0 @@
-conda常用命令
-
-conda list：查看环境中已经安装了的软件包
-conda env list 或者 conda info -e : 查看当前存在那些虚拟环境
-conda update conda: 检查更新当前的conda版本
-conda install package_name(包名)：下载安装包
-conda uninstall package_name(包名)： 卸载安装包
