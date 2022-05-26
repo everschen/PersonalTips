@@ -1,11 +1,11 @@
-#conda pip and apt 
+# conda pip and apt 
 
-##conda install 和 pip install 区别
+## conda install 和 pip install 区别
 通常我们可以使用conda和pip两种方式来下载和卸载安装包，这里说一下这两种方式使用的区别。conda是一种通用包管理系统，可以构建和管理任何语言的任何类型的软件，因此，它也使用于Python包。pip是Python官当认可的包管理器，最常用于安装在Python包索引（PyPI）上发布的包，网址https://pypi.org/。
 即：pip是Python包的通用管理器，conda是一个与语言无关的跨平台环境管理器，对于我们用户来说，最显著的区别是pip在任何环境中安装Python包，conda安装任何环境的任何包。
 注意：Anaconda中base环境中已经集成安装好了conda和pip，所以可以使用两种方式来安装我们想要的python软件包，安装好了软件包在Scripts目录下可以找到。
 
-##PiP常用命令
+## PiP常用命令
 pip --version：查看已经安装了的pip版本
 pip install -U pip：升级pip
 pip list 或 pip freeze：查看当前已经安装好了包及版本
