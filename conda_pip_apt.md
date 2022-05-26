@@ -1,34 +1,43 @@
 # conda pip and apt 
 
 ## conda install 和 pip install 区别
+```
 通常我们可以使用conda和pip两种方式来下载和卸载安装包，这里说一下这两种方式使用的区别。conda是一种通用包管理系统，可以构建和管理任何语言的任何类型的软件，因此，它也使用于Python包。pip是Python官当认可的包管理器，最常用于安装在Python包索引（PyPI）上发布的包，网址https://pypi.org/。
 即：pip是Python包的通用管理器，conda是一个与语言无关的跨平台环境管理器，对于我们用户来说，最显著的区别是pip在任何环境中安装Python包，conda安装任何环境的任何包。
 注意：Anaconda中base环境中已经集成安装好了conda和pip，所以可以使用两种方式来安装我们想要的python软件包，安装好了软件包在Scripts目录下可以找到。
+```
 
 ## PiP
 
 ###常用命令
+```
 pip --version：查看已经安装了的pip版本
 pip install -U pip：升级pip
 pip list 或 pip freeze：查看当前已经安装好了包及版本
 pip install package_name(包名)：下载安装包
 pip uninstall package_name(包名)： 卸载安装包
 pip show package_name(包名)：显示安装包信息（安装路径、依赖关系等）
+```
 
 ### pip国内常用镜像源
+```
 阿里云 http://mirrors.aliyun.com/pypi/simple/
 中国科技大学 https://pypi.mirrors.ustc.edu.cn/simple/
 豆瓣(douban) http://pypi.douban.com/simple/
 清华大学 https://pypi.tuna.tsinghua.edu.cn/simple/
 中国科学技术大学 http://pypi.mirrors.ustc.edu.cn/simple/
 这里推荐使用豆瓣和清华源，因为它们比较稳定
+```
 
 ### pip安装临时使用国内镜像源
+```
 可以在使用pip安装时在后面加上 -i 参数，来指定pip源，举例：
 pip install numpy -i https://pypi.douban.com/simple/
 注意：http后面要加s
+```
 
 ### 永久指定pip默认安装源
+```
 Windows:
 直接在user目录中创建一个pip目录，如：C:\Users\用户名\pip,创建完后再pip 目 录下新建文件pip.ini，添加以下内容：
 [gobal]
@@ -43,7 +52,7 @@ Linux：
 timeout = 6000
 index-url = http://pypi.douban.com/simple/
 trusted-host = http://pypi.douban.com
-
+```
 
 ## conda
 ### 常用命令
