@@ -60,10 +60,12 @@ conda create -n your _env_name package_name python=X.X (2.7、3.6等)
 举例：conda create -n myenv numpy matplotlib python=3.7
 
 ### 删除虚拟环境
+```
 conda remove -n your_env_name --all ,即可删除
 删除虚拟环境中的某个包
 conda remove -- name your_env_name package_name (包名)
 或者进入激活虚拟环境后，使用命令 conda uninstall package_name(包名)
+```
 
 ### 激活已经创建的虚拟环境
 conda activate aligner
@@ -72,7 +74,11 @@ conda activate aligner
 conda deactivate
 
 
+
+
+
 ### conda切换源
+```
 在conda安装好之后，默认的镜像是官方的，由于官网的镜像在境外,访问太慢或者不能访问，为了能够加快访问的速度，首先在命令行中打开虚拟环境，输入以下命令(设置清华的镜像)
 终端中运行命令：
 (1)清华源(TUNA)
@@ -84,13 +90,13 @@ conda config --add channels https://mirrors.ustc.edu.cn/anaconda/pkgs/free/
 conda config --add channels https://mirrors.ustc.edu.cn/anaconda/pkgs/main/
 conda config --setshow_channel_urls yes
 然后更改镜像源配置文件，在用户home目录下，找到 .condarc 配置文件，如C:\Users\用户名.condarc,右键选择记事本打开编辑，删掉channels下面的 -defaults一行,或者在其前面加#号注释掉。
+```
 
 ### 换回默认源：
 conda config --remove-key channels
 
 
 ### Conda 提供了多种保存和移动环境的方法。
-
 Clone
 在本地，conda 可以方便地创建环境的快照或者备份：
 conda create --name snapshot --clone myenv
