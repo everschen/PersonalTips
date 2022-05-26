@@ -15,34 +15,34 @@ pip show package_name(包名)：显示安装包信息（安装路径、依赖关
 
 
 
-##conda常用命令
+## conda常用命令
 conda list/pip list：查看环境中已经安装了的软件包 (需要先激活已经创建的虚拟环境)
 conda env list 或者 conda info -e : 查看当前存在那些虚拟环境
 conda update conda: 检查更新当前的conda版本
 conda install package_name(包名)：下载安装包
 conda uninstall package_name(包名)： 卸载安装包
 
-##创建虚拟环境
+## 创建虚拟环境
 conda create -n your _env_name package_name python=X.X (2.7、3.6等)
 虚拟环境名字为： your _env_name
 注意：your_env_name文件可以在Anaconda安装目录envs文件下找到
 举例：conda create -n myenv numpy matplotlib python=3.7
 
-##删除虚拟环境
+## 删除虚拟环境
 conda remove -n your_env_name --all ,即可删除
 删除虚拟环境中的某个包
 conda remove -- name your_env_name package_name (包名)
 或者进入激活虚拟环境后，使用命令 conda uninstall package_name(包名)
 
 
-##激活已经创建的虚拟环境
+## 激活已经创建的虚拟环境
 conda activate aligner
 
-##退出已经创建的虚拟环境
+## 退出已经创建的虚拟环境
 conda deactivate
 
 
-##pip国内常用镜像源
+## pip国内常用镜像源
 阿里云 http://mirrors.aliyun.com/pypi/simple/
 中国科技大学 https://pypi.mirrors.ustc.edu.cn/simple/
 豆瓣(douban) http://pypi.douban.com/simple/
@@ -50,12 +50,12 @@ conda deactivate
 中国科学技术大学 http://pypi.mirrors.ustc.edu.cn/simple/
 这里推荐使用豆瓣和清华源，因为它们比较稳定
 
-##pip安装临时使用国内镜像源
+## pip安装临时使用国内镜像源
 可以在使用pip安装时在后面加上 -i 参数，来指定pip源，举例：
 pip install numpy -i https://pypi.douban.com/simple/
 注意：http后面要加s
 
-##永久指定pip默认安装源
+## 永久指定pip默认安装源
 Windows:
 直接在user目录中创建一个pip目录，如：C:\Users\用户名\pip,创建完后再pip 目 录下新建文件pip.ini，添加以下内容：
 [gobal]
@@ -72,7 +72,7 @@ index-url = http://pypi.douban.com/simple/
 trusted-host = http://pypi.douban.com
 
 
-##conda切换源
+## conda切换源
 在conda安装好之后，默认的镜像是官方的，由于官网的镜像在境外,访问太慢或者不能访问，为了能够加快访问的速度，首先在命令行中打开虚拟环境，输入以下命令(设置清华的镜像)
 终端中运行命令：
 (1)清华源(TUNA)
@@ -85,11 +85,11 @@ conda config --add channels https://mirrors.ustc.edu.cn/anaconda/pkgs/main/
 conda config --setshow_channel_urls yes
 然后更改镜像源配置文件，在用户home目录下，找到 .condarc 配置文件，如C:\Users\用户名.condarc,右键选择记事本打开编辑，删掉channels下面的 -defaults一行,或者在其前面加#号注释掉。
 
-##换回默认源：
+## 换回默认源：
 conda config --remove-key channels
 
 
-##Conda 提供了多种保存和移动环境的方法。
+## Conda 提供了多种保存和移动环境的方法。
 
 Clone
 在本地，conda 可以方便地创建环境的快照或者备份：
