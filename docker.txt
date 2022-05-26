@@ -25,3 +25,16 @@ docker container exec -it <container-name or container-id> bash 命令会在容�
 显示容器的配置细节和运行时信息。该命令接收容器名称和容器 ID 作为主要参数。
 
 8) sudo docker images
+
+9) 删除image
+sudo docker image rm
+sudo docker image rm -f
+
+10) docker search centos
+
+11) sudo nvidia-docker pull registry.baidubce.com/paddlepaddle/paddle:2.2.0-gpu-cuda10.2-cudnn7
+sudo nvidia-docker pull registry.baidubce.com/paddlepaddle/paddle
+
+12) sudo nvidia-docker run --net=host --ipc=host --rm -it -v $(pwd)/PaddleSpeech:/PaddleSpeech registry.baidubce.com/paddlepaddle/paddle:2.2.0-gpu-cuda10.2-cudnn7 /bin/bash
+sudo nvidia-docker run --net=host --ipc=host --rm -it -v $(pwd)/PaddleSpeech:/PaddleSpeech registry.baidubce.com/paddlepaddle/paddle /bin/bash
+
