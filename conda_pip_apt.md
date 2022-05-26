@@ -56,17 +56,21 @@ trusted-host = http://pypi.douban.com
 
 ## conda
 ### 常用命令
+```
 conda list/pip list：查看环境中已经安装了的软件包 (需要先激活已经创建的虚拟环境)
 conda env list 或者 conda info -e : 查看当前存在那些虚拟环境
 conda update conda: 检查更新当前的conda版本
 conda install package_name(包名)：下载安装包
 conda uninstall package_name(包名)： 卸载安装包
+```
 
 ### 创建虚拟环境
+```
 conda create -n your _env_name package_name python=X.X (2.7、3.6等)
 虚拟环境名字为： your _env_name
 注意：your_env_name文件可以在Anaconda安装目录envs文件下找到
 举例：conda create -n myenv numpy matplotlib python=3.7
+```
 
 ### 删除虚拟环境
 ```
@@ -106,6 +110,7 @@ conda config --remove-key channels
 
 
 ### Conda 提供了多种保存和移动环境的方法。
+```
 Clone
 在本地，conda 可以方便地创建环境的快照或者备份：
 conda create --name snapshot --clone myenv
@@ -116,4 +121,4 @@ Spec List
 conda list --explicit > spec-list.txt
 重现环境：
 conda create  --name python-course --file spec-list.txt
-
+```
