@@ -75,4 +75,11 @@ else
 	else
 		echo "bminer is running, pid is ${bbpid[0]}, ${bbpid[1]}"		
 	fi
+
+    pid=`ps -ef |grep evers_monitor.sh |grep -v grep|awk '{print $2}'`
+	if [[ -z "$pid" ]]; then
+		echo "evers_monitor.sh is not running"
+	else
+		echo "evers_monitor.sh is running, pid is $pid"
+	fi
 fi
