@@ -51,7 +51,8 @@
 	git push
 	git push -f
 
-## 8. git apply --reverse ~/update.diff
+## 8. git diff 反向 apply
+	git apply --reverse ~/update.diff
 
 ## 9. git worktree
 	git branch -M BR_PSCALE_112611 BR_PSCALE_112611.original
