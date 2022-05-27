@@ -11,7 +11,8 @@
 ## 一些命令和配置参考
 	alias.md  
 	conda_pip_apt.md  
-	docker.md  git.md  
+	docker.md  
+	git.md  
 	README.md  
 	screen.md  
 	tips.md  
