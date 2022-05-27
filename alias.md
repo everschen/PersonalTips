@@ -1,3 +1,4 @@
+# my alias for easy use
 	alias branch='git branch -vv'
 	alias gitclean='git clean -f -x -d'
 	alias submit='_submit(){ git add -u; if [[ "$1" != "" ]]; then git commit -m "$1"; else git commit; fi; git push --force; }; _submit'
