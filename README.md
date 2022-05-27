@@ -8,7 +8,7 @@
 	5. C
 	6. document 一些文档
 
-## 4.一些命令和配置参考
+## 一些命令和配置参考
 	alias.md  
 	conda_pip_apt.md  
 	docker.md  git.md  
