@@ -1,0 +1,1 @@
+/home/evers/bminer/evers_control.sh
