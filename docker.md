@@ -43,5 +43,8 @@ docker container exec -it <container-name or container-id> bash 命令会在容�
 	docker run --net=host --ipc=host --rm -it -v $(pwd)/PaddleSpeech:/PaddleSpeech registry.baidubce.com/paddlepaddle/paddle:2.2.0-gpu-cuda10.2-cudnn7 /bin/bash
 	docker run --net=host --ipc=host --rm -it -v $(pwd)/PaddleSpeech:/PaddleSpeech registry.baidubce.com/paddlepaddle/paddle /bin/bash
 
+### 13) 提交你刚才修改的镜像，新的镜像名称为demo，版本为v1.3 (docker ps 输出的CONTAINER ID)
+    docker commit 4gd0ee60346g3 demo:v1.3
+
 
 
