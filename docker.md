@@ -46,5 +46,8 @@ docker container exec -it <container-name or container-id> bash 命令会在容�
 ### 13) 提交你刚才修改的镜像，新的镜像名称为demo，版本为v1.3 (docker ps 输出的CONTAINER ID)
     docker commit 4gd0ee60346g3 demo:v1.3
 
+### 14) attach 
+docker attach --sig-proxy=false container_id
 
-
+### 15) 怎么在 docker 中开启多个终端
+可以先通过docker ps获取container id，然后通过docker exec -it ${container_id} /bin/bash
