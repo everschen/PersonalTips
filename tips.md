@@ -33,3 +33,12 @@
 ## 9.要持续监测文件改动，可以使用 watch，
 	例如检查某个文件夹中文件的改变，可以用 watch -d -n 2 'ls -rtlh | tail'；或者在排查 WiFi 设置故障时要监测网络设置的更改，
 	可以用 watch -d -n 2 ifconfig
+
+## 10. vs code对不同语言不同的tab替换规则
+	Hit Shift+Command+P to bring up the action menu
+	Search for the Preferences: Configure Language Specific Settings... item
+	Select the language, e.g. HTML or Python
+
+	Add "editor.tabSize": 2 to the corresponding JSON object
+	"editor.insertSpaces": false/true,
+	"editor.tabSize": 4
