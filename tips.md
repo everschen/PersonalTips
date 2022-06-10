@@ -35,10 +35,16 @@
 	可以用 watch -d -n 2 ifconfig
 
 ## 10. vs code对不同语言不同的tab替换规则
-	Hit Shift+Command+P to bring up the action menu
+	对于python和CPP/C关于tab有不同的编码规则，可以对VS code对于不同语言做不同的设置，供参考
+	Hit Shift+ctrl+P to bring up the action menu
 	Search for the Preferences: Configure Language Specific Settings... item
-	Select the language, e.g. HTML or Python
 
-	Add "editor.tabSize": 2 to the corresponding JSON object
-	"editor.insertSpaces": false/true,
-	"editor.tabSize": 4
+	Select the language, Python
+	add "editor.insert" in the field, it will be "@lang:python editor.insert" and set "Editor: Insert Spaces": selected,
+	add "editor.tab" in the field, it will be "@lang:python editor.tab" and set "Editor : Tab Size" to 4
+
+	Select the language, CPP
+	add "editor.insert" in the field, it will be "@lang:cpp editor.insert" and set "Editor: Insert Spaces": not selected,
+
+	Select the language, C
+	add "editor.insert" in the field, it will be "@lang:c editor.insert" and set "Editor: Insert Spaces": not selected
