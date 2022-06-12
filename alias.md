@@ -1,6 +1,6 @@
 # my alias for easy use
 	alias branch='git branch -vv'
-	alias gitclean='git clean -f -x -d'
+	alias gitclean='git clean -fd'  //remove untracked files in git
 	alias submit='_submit(){ git add -u; if [[ "$1" != "" ]]; then git commit -m "$1"; else git commit; fi; git push --force; }; _submit'
 	alias submitu='_submit(){ update_files=`git status -s`; git add -u; git commit -m "update files: $update_files";  git push --force; }; _submit'
 	alias submita='_submit(){ git add -u; git commit --amend;  git push --force; }; _submit'
