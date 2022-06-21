@@ -64,6 +64,6 @@
 		/ifs/home/echen1/git_test/new_folder        f86aec0 [my_test_branch]
 		/ifs/home/echen1/git_test/new_folder/again  f86aec0 [again_branch]
 
-
-
+## 10. remove cache
+	git rm --cached -r . && git reset --hard # Warning, your local changes will be lost, so commit FIRST
 
