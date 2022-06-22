@@ -51,6 +51,10 @@
 	git push
 	git push -f
 
+	#reorder
+	git rebase -i HEAD~3 #3 is the number you can change
+	Reordering is as simple as moving the various ‘pick’ commands around.
+
 ## 8. git diff 反向 apply
 	git apply --reverse ~/update.diff
 
