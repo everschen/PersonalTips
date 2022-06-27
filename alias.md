@@ -7,3 +7,4 @@
 	alias rmfc='_rmfc(){ for i in "$1";do echo "rm $i\n"; yes | rm $i ;done ;}; _rmfc'
 	alias uplift='_uplift(){ futurize --both-stages --write "$1"; black "$1";  reorder-python-imports "$1";  flake8 --config="ports/isilon/powerlint/files/config/flake8" "$1";}; _uplift'
 	alias status="git status"
+	alias dt_create='_dt_create(){ if [[ "$2" != "" ]]; then dt vcluster create "$1" --location="$2" --num-nodes=3 --num-cpus=4 --password=a --qa --ignore-configure-errors; else dt vcluster create "$1" --location=sea1 --num-nodes=3 --num-cpus=4 --password=a --qa ; fi; }; _dt_create'
