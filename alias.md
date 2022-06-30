@@ -9,4 +9,5 @@
 	alias status="git status"
 	alias dt_create='_dt_create(){ if [[ "$2" != "" ]]; then dt vcluster create "$1" --location="$2" --num-nodes=3 --num-cpus=4 --password=a --qa --ignore-configure-errors; else dt vcluster create "$1" --location=sea1 --num-nodes=3 --num-cpus=4 --password=a --qa ; fi; }; _dt_create'
 	alias fetch='git fetch --all --tags'
+	clu='dt --owner echen1 vcluster list --pretty'
 	
