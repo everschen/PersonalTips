@@ -71,3 +71,5 @@
 ## 10. remove cache
 	git rm --cached -r . && git reset --hard # Warning, your local changes will be lost, so commit FIRST
 
+## 11. checkout from tag
+	git checkout tags/B_9_3_0 -b BR_TEST_930
