@@ -12,4 +12,5 @@
 	clu='dt --owner echen1 vcluster list --pretty --pretty-columns name,id,build,expires,location,ips,state,provider_id,cost_per_hour --pretty-sort id'
 	alias remove_ssh='_remove_ssh(){ ssh-keygen -f "/ifs/home/echen1/.ssh/known_hosts" -R "$1"; }; _remove_ssh'
 	alias GDB='_GDB(){ pa=`which ${1%%.*}`;gdb $pa $1 ;}; _GDB'
+	alias mykill='_mykill(){ pgrep -f "$1" | xargs kill ;}; _mykill'
 	
