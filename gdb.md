@@ -1,6 +1,57 @@
 
 # gdb debug summary
 
+set print pretty on
+
+	1. bt
+		1. bt full
+	2. info threads
+	3. info proc
+		1. info proc stat
+		2. info proc all
+		3. info proc files
+		4. info proc status
+	4. x/32xg address
+		1. 打印内存内容
+	5. info locals
+	6. info registers
+	7. frame X (change to stack frame X)
+	8. jemalloc
+		1. arena
+			1. p __je_narenas_auto  //arenas[0..narenas_auto)
+			2. p narenas_total
+			3. p __je_opt_narenas  // __je_ncpus *4
+			4. p __je_arenas
+			5. p __je_ncpus
+			6. p huge_arena_ind
+		2. tcache
+			1. p __je_opt_tcache
+			2. p __je_opt_lg_tcache_max  //15
+			3. p *__je_tcache_bin_info
+			4. p stack_nelms   //3096
+			1. p __je_tcache_maxclass  //32768
+			2. p __je_tcaches
+			3. p tcaches_past
+			4. p tcaches_avail
+		1. debug
+			1. p __je_opt_abort
+			2. p __je_opt_junk_alloc
+			3. p __je_opt_junk_free
+		2. threads
+			1. p __je_n_background_threads
+			2. p __je_max_background_threads
+		3. bin
+			1. p __je_nhbins   //41
+			2. p __je_bin_infos
+		4. extent
+			1. p extents_bitmap_info
+			2. p __je_opt_retain
+		5. size
+			1. p __je_sz_pind2sz_tab
+			2. p __je_sz_index2size_tab
+			3. p __je_sz_size2index_tab
+
+
 ### 1) print data of some address
     x/32xg address
     examine命令缩写为x
