@@ -49,3 +49,6 @@
 	screen -t home 0
 	screen -t home 1
 	screen -t cluster 2
+
+## force kill current windows
+	CTRL+a k/K
