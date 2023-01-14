@@ -128,6 +128,7 @@
 ## apt
 
 
+
 ### 将apt服务器更换为国内的镜像服务器
 
 	cd /etc/apt
@@ -159,3 +160,6 @@
 	sudo apt-get update
 
 
+# 如何apt因为依赖失败
+	可以换个命令sudo aptitude  install <packgename>，因为aptitude会自动把所有依赖的库都帮你顺着找到，并下载好。而apt-get下载某个包中它的所有依赖项都必须存在，这就是为什么我们每次执行apt-get的时候都需要先apt-get update的更新软件包的原因。
+	如果提示找不到aptitude，可以先使用sudo apt-get install aptitude进行下载
